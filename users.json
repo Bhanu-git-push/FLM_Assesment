@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": "1caa1d4c-af5a-421b-a660-adaea9960d71",
+      "firstName": "Bhanu Prakash",
+      "lastName": "Tirupati",
+      "email": "bhanu@gmail.com",
+      "mobile": "9876543210",
+      "password": "demo@123"
+    },
+    {
+      "id": "2caa1d4c-af5a-421b-a660-adaea9960d72",
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john@gmail.com",
+      "mobile": "9876543211",
+      "password": "john@123"
+    },
+    {
+      "id": "3caa1d4c-af5a-421b-a660-adaea9960d73",
+      "firstName": "Steve",
+      "lastName": "Bob",
+      "email": "steve@gmail.com",
+      "mobile": "8123456709",
+      "password": "steve@123"
+    },
+    {
+      "id": "01d4669b-32f6-425d-9224-d5a5b8950699",
+      "firstName": "NANDIMANDALAM",
+      "lastName": "ANKAL",
+      "email": "ankal@gmail.com",
+      "mobile": "6789054321",
+      "password": "ankal@123"
+    }
+  ]
+}

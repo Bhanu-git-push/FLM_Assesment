@@ -1,0 +1,706 @@
+{
+  "companies": [
+    {
+      "id": 1,
+      "name": "Aurora Analytics",
+      "industry": "Analytics",
+      "description": "Provides real-time business intelligence dashboards.",
+      "headquarters": {
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "country": "India"
+      },
+      "ceo": "Priya Iyer",
+      "foundedYear": 2015,
+      "website": "https://auroraanalytics.com",
+      "rating": 4.3
+    },
+    {
+      "id": 2,
+      "name": "Frontlines EduTech",
+      "industry": "Edutech",
+      "description": "#1 Largest Telugu Student Community.",
+      "headquarters": {
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "country": "India"
+      },
+      "ceo": "Krishna Mantravadi",
+      "foundedYear": 2020,
+      "website": "https://www.frontlinesedutech.com",
+      "rating": 4.8
+    },
+    {
+      "id": 3,
+      "name": "DataFlow Dynamics",
+      "industry": "Big Data",
+      "description": "Data engineering and pipelines.",
+      "headquarters": {
+        "city": "San Francisco",
+        "state": "CA",
+        "country": "USA"
+      },
+      "ceo": "William Carter",
+      "foundedYear": 2015,
+      "website": "https://dataflowdynamics.com",
+      "rating": 3.4
+    },
+    {
+      "id": 4,
+      "name": "Quantum Edge",
+      "industry": "AI",
+      "description": "Develops AI-powered developer tools.",
+      "headquarters": { "city": "Delhi", "state": "Delhi", "country": "India" },
+      "ceo": "Aditya Narang",
+      "foundedYear": 2020,
+      "website": "https://quantumedge.ai",
+      "rating": 2.6
+    },
+    {
+      "id": 5,
+      "name": "SkyNet Mobility",
+      "industry": "Transport",
+      "description": "EV-based urban mobility solutions.",
+      "headquarters": {
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "country": "India"
+      },
+      "ceo": "Meena Karthik",
+      "foundedYear": 2017,
+      "website": "https://skynetmobility.com",
+      "rating": 4.2
+    },
+
+    {
+      "id": 6,
+      "name": "CloudForge Systems",
+      "industry": "Cloud",
+      "description": "Cloud migration and data modernization services.",
+      "headquarters": {
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India"
+      },
+      "ceo": "Karan D'Souza",
+      "foundedYear": 2014,
+      "website": "https://cloudforge.io",
+      "rating": 3.8
+    },
+    {
+      "id": 7,
+      "name": "NextWave Computing",
+      "industry": "Hardware",
+      "description": "High-performance computing chips.",
+      "headquarters": {
+        "city": "Kochi",
+        "state": "Kerala",
+        "country": "India"
+      },
+      "ceo": "Vikram Nair",
+      "foundedYear": 2016,
+      "website": "https://nextwavecomputing.com",
+      "rating": 1.5
+    },
+    {
+      "id": 8,
+      "name": "UrbanTech Labs",
+      "industry": "IoT",
+      "description": "IoT platform for smart city automation.",
+      "headquarters": {
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "ceo": "Anisha Kapoor",
+      "foundedYear": 2019,
+      "website": "https://urbantechlabs.io",
+      "rating": 5
+    },
+    {
+      "id": 9,
+      "name": "GreenMind Energy",
+      "industry": "Energy",
+      "description": "Renewable energy solutions for businesses.",
+      "headquarters": {
+        "city": "Jaipur",
+        "state": "Rajasthan",
+        "country": "India"
+      },
+      "ceo": "Suresh Patel",
+      "foundedYear": 2011,
+      "website": "https://greenmind.energy",
+      "rating": 2.8
+    },
+    {
+      "id": 10,
+      "name": "FinVerse Global",
+      "industry": "Finance",
+      "description": "Digital payments and fintech APIs.",
+      "headquarters": {
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "country": "India"
+      },
+      "ceo": "Dhruv Desai",
+      "foundedYear": 2013,
+      "website": "https://finverseglobal.com",
+      "rating": 4.1
+    },
+
+    {
+      "id": 11,
+      "name": "Atlas Robotics",
+      "industry": "Robotics",
+      "description": "Industrial automation and robotics.",
+      "headquarters": { "city": "Tokyo", "state": "Tokyo", "country": "Japan" },
+      "ceo": "Kenji Nakamura",
+      "foundedYear": 2008,
+      "website": "https://atlasrobotics.jp",
+      "rating": 5
+    },
+    {
+      "id": 12,
+      "name": "NorthStar Media",
+      "industry": "Media",
+      "description": "Digital media and streaming content.",
+      "headquarters": {
+        "city": "Toronto",
+        "state": "Ontario",
+        "country": "Canada"
+      },
+      "ceo": "Liam Morgan",
+      "foundedYear": 2010,
+      "website": "https://northstarmedia.ca",
+      "rating": 3.6
+    },
+    {
+      "id": 13,
+      "name": "EuroSys Security",
+      "industry": "Cybersecurity",
+      "description": "Cloud security and threat detection.",
+      "headquarters": {
+        "city": "Berlin",
+        "state": "Berlin",
+        "country": "Germany"
+      },
+      "ceo": "Anna Schmitt",
+      "foundedYear": 2016,
+      "website": "https://eurosyssecurity.de",
+      "rating": 4.5
+    },
+    {
+      "id": 14,
+      "name": "OceanWave Networks",
+      "industry": "Telecom",
+      "description": "Submarine cable networks and connectivity.",
+      "headquarters": {
+        "city": "Sydney",
+        "state": "NSW",
+        "country": "Australia"
+      },
+      "ceo": "Jacob Wilson",
+      "foundedYear": 2011,
+      "website": "https://oceanwave.net.au",
+      "rating": 2.5
+    },
+    {
+      "id": 15,
+      "name": "ArcticSoft",
+      "industry": "Software",
+      "description": "Business productivity tools.",
+      "headquarters": {
+        "city": "Stockholm",
+        "state": "Stockholm",
+        "country": "Sweden"
+      },
+      "ceo": "Erik Larsson",
+      "foundedYear": 2014,
+      "website": "https://arcticsoft.se",
+      "rating": 5
+    },
+
+    {
+      "id": 16,
+      "name": "VoltRide Mobility",
+      "industry": "Electric Vehicles",
+      "description": "EV fleet management systems.",
+      "headquarters": { "city": "New York", "state": "NY", "country": "USA" },
+      "ceo": "Emma Johnson",
+      "foundedYear": 2019,
+      "website": "https://voltride.com",
+      "rating": 1.3
+    },
+    {
+      "id": 17,
+      "name": "CyberNova",
+      "industry": "Cybersecurity",
+      "description": "Threat analytics for enterprises.",
+      "headquarters": { "city": "London", "state": "London", "country": "UK" },
+      "ceo": "Michael Clarke",
+      "foundedYear": 2013,
+      "website": "https://cybernova.co.uk",
+      "rating": 3.9
+    },
+    {
+      "id": 18,
+      "name": "HealthSphere",
+      "industry": "Healthcare",
+      "description": "Digital health and telemedicine tools.",
+      "headquarters": {
+        "city": "Dublin",
+        "state": "Leinster",
+        "country": "Ireland"
+      },
+      "ceo": "Olivia Byrne",
+      "foundedYear": 2017,
+      "website": "https://healthsphere.ie",
+      "rating": 4
+    },
+    {
+      "id": 19,
+      "name": "NovaRetail",
+      "industry": "E-commerce",
+      "description": "Online platform for lifestyle and electronics.",
+      "headquarters": {
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "country": "India"
+      },
+      "ceo": "Sanjana Verma",
+      "foundedYear": 2018,
+      "website": "https://novaretail.com",
+      "rating": 5
+    },
+    {
+      "id": 20,
+      "name": "PixelArt Studios",
+      "industry": "Gaming",
+      "description": "Game development and digital art.",
+      "headquarters": {
+        "city": "Seoul",
+        "state": "Seoul",
+        "country": "South Korea"
+      },
+      "ceo": "Hyun-Woo Park",
+      "foundedYear": 2019,
+      "website": "https://pixelartstudios.kr",
+      "rating": 2
+    },
+
+    {
+      "id": 21,
+      "name": "SolarWind Tech",
+      "industry": "Energy",
+      "description": "Solar grid systems and batteries.",
+      "headquarters": { "city": "Madrid", "state": "MD", "country": "Spain" },
+      "ceo": "Carlos Ruiz",
+      "foundedYear": 2012,
+      "website": "https://solarwind.es",
+      "rating": 4.9
+    },
+    {
+      "id": 22,
+      "name": "MedicoLabs",
+      "industry": "Biotech",
+      "description": "Biotech R&D tools.",
+      "headquarters": {
+        "city": "Zurich",
+        "state": "ZH",
+        "country": "Switzerland"
+      },
+      "ceo": "Nina Bauer",
+      "foundedYear": 2009,
+      "website": "https://medicolabs.ch",
+      "rating": 5
+    },
+    {
+      "id": 23,
+      "name": "TradeMaster Global",
+      "industry": "Finance",
+      "description": "Algo-trading platform.",
+      "headquarters": {
+        "city": "Singapore",
+        "state": "Central",
+        "country": "Singapore"
+      },
+      "ceo": "Kelvin Lee",
+      "foundedYear": 2018,
+      "website": "https://trademaster.sg",
+      "rating": 3.5
+    },
+    {
+      "id": 24,
+      "name": "SilverSky Logistics",
+      "industry": "Logistics",
+      "description": "Freight and supply chain automation.",
+      "headquarters": { "city": "Dubai", "state": "Dubai", "country": "UAE" },
+      "ceo": "Omar Hassan",
+      "foundedYear": 2016,
+      "website": "https://silverskylogistics.ae",
+      "rating": 1
+    },
+    {
+      "id": 25,
+      "name": "AeroTrack Systems",
+      "industry": "Aviation",
+      "description": "Aircraft tracking and maintenance tools.",
+      "headquarters": {
+        "city": "Paris",
+        "state": "Île-de-France",
+        "country": "France"
+      },
+      "ceo": "Marie Dupont",
+      "foundedYear": 2011,
+      "website": "https://aerotrack.fr",
+      "rating": 4.1
+    },
+
+    {
+      "id": 26,
+      "name": "PrimeWare Solutions",
+      "industry": "IT Services",
+      "description": "Digital transformation and consulting.",
+      "headquarters": {
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "country": "India"
+      },
+      "ceo": "Arjun Rao",
+      "foundedYear": 2014,
+      "website": "https://primeware.in",
+      "rating": 5
+    },
+    {
+      "id": 27,
+      "name": "EcoBuild Materials",
+      "industry": "Construction",
+      "description": "Eco-friendly sustainable building materials.",
+      "headquarters": {
+        "city": "Visakhapatnam",
+        "state": "AP",
+        "country": "India"
+      },
+      "ceo": "Harsha Reddy",
+      "foundedYear": 2021,
+      "website": "https://ecobuildmaterials.in",
+      "rating": 3.9
+    },
+    {
+      "id": 28,
+      "name": "DevStack Labs",
+      "industry": "Software",
+      "description": "Developer platform and tools.",
+      "headquarters": {
+        "city": "Mysuru",
+        "state": "Karnataka",
+        "country": "India"
+      },
+      "ceo": "Kishore M",
+      "foundedYear": 2018,
+      "website": "https://devstacklabs.com",
+      "rating": 3
+    },
+    {
+      "id": 29,
+      "name": "SmartFarm Innovations",
+      "industry": "Agritech",
+      "description": "Smart irrigation and farm tech.",
+      "headquarters": { "city": "Indore", "state": "MP", "country": "India" },
+      "ceo": "Anand Jain",
+      "foundedYear": 2020,
+      "website": "https://smartfarminnovations.in",
+      "rating": 4
+    },
+    {
+      "id": 30,
+      "name": "MetaWave Studios",
+      "industry": "AR/VR",
+      "description": "AR/VR interactive platforms.",
+      "headquarters": { "city": "Kolkata", "state": "WB", "country": "India" },
+      "ceo": "Neha Banerjee",
+      "foundedYear": 2022,
+      "website": "https://metawavestudios.in",
+      "rating": 2.2
+    },
+
+    {
+      "id": 31,
+      "name": "BlueRiver Hosting",
+      "industry": "Cloud",
+      "description": "Managed cloud hosting services.",
+      "headquarters": {
+        "city": "Copenhagen",
+        "state": "Hovedstaden",
+        "country": "Denmark"
+      },
+      "ceo": "Lars Schmidt",
+      "foundedYear": 2013,
+      "website": "https://blueriver.dk",
+      "rating": 5
+    },
+    {
+      "id": 32,
+      "name": "NeuroNet AI",
+      "industry": "AI Research",
+      "description": "Neural network R&D for enterprises.",
+      "headquarters": {
+        "city": "Beijing",
+        "state": "Beijing",
+        "country": "China"
+      },
+      "ceo": "Wei Zhang",
+      "foundedYear": 2018,
+      "website": "https://neuronet.cn",
+      "rating": 3.1
+    },
+    {
+      "id": 33,
+      "name": "Oceanic Foods",
+      "industry": "FoodTech",
+      "description": "Seafood processing and delivery.",
+      "headquarters": { "city": "Oslo", "state": "Oslo", "country": "Norway" },
+      "ceo": "Hanna Olsen",
+      "foundedYear": 2010,
+      "website": "https://oceanicfoods.no",
+      "rating": 2.2
+    },
+    {
+      "id": 34,
+      "name": "BrightPath Education",
+      "industry": "EduTech",
+      "description": "Student learning and tutoring apps.",
+      "headquarters": { "city": "Rome", "state": "Lazio", "country": "Italy" },
+      "ceo": "Marco Romano",
+      "foundedYear": 2019,
+      "website": "https://brightpath.it",
+      "rating": 4.6
+    },
+    {
+      "id": 35,
+      "name": "FutureMart",
+      "industry": "E-commerce",
+      "description": "Online hypermarket for essentials.",
+      "headquarters": {
+        "city": "Amsterdam",
+        "state": "NH",
+        "country": "Netherlands"
+      },
+      "ceo": "Elise van Dijk",
+      "foundedYear": 2020,
+      "website": "https://futuremart.nl",
+      "rating": 3.9
+    },
+
+    {
+      "id": 36,
+      "name": "RedPulse Systems",
+      "industry": "Automation",
+      "description": "Industrial automation solutions.",
+      "headquarters": {
+        "city": "Bangkok",
+        "state": "Bangkok",
+        "country": "Thailand"
+      },
+      "ceo": "Narin Sookchai",
+      "foundedYear": 2014,
+      "website": "https://redpulse.co.th",
+      "rating": 2.9
+    },
+    {
+      "id": 37,
+      "name": "SilverCloud Finance",
+      "industry": "Fintech",
+      "description": "Cloud-based financial services.",
+      "headquarters": {
+        "city": "Vienna",
+        "state": "Vienna",
+        "country": "Austria"
+      },
+      "ceo": "Johann Weber",
+      "foundedYear": 2016,
+      "website": "https://silvercloud.at",
+      "rating": 5
+    },
+    {
+      "id": 38,
+      "name": "UrbanLift Mobility",
+      "industry": "Transport",
+      "description": "Smart scooter and bike rentals.",
+      "headquarters": {
+        "city": "Brasília",
+        "state": "DF",
+        "country": "Brazil"
+      },
+      "ceo": "Lucas Fernandes",
+      "foundedYear": 2018,
+      "website": "https://urbanlift.com.br",
+      "rating": 4
+    },
+    {
+      "id": 39,
+      "name": "GreenLeaf Farms",
+      "industry": "Agriculture",
+      "description": "Organic farming supply chain tech.",
+      "headquarters": {
+        "city": "Wellington",
+        "state": "Wellington",
+        "country": "New Zealand"
+      },
+      "ceo": "Sophia Clarke",
+      "foundedYear": 2012,
+      "website": "https://greenleaffarms.nz",
+      "rating": 1
+    },
+    {
+      "id": 40,
+      "name": "InfoSphere Global",
+      "industry": "Consulting",
+      "description": "Global IT consulting and strategy.",
+      "headquarters": {
+        "city": "Johannesburg",
+        "state": "Gauteng",
+        "country": "South Africa"
+      },
+      "ceo": "Zanele Khumalo",
+      "foundedYear": 2015,
+      "website": "https://infosphere.co.za",
+      "rating": 3.7
+    },
+    {
+      "id": 41,
+      "name": "TechMinds Solutions",
+      "industry": "IT Services",
+      "description": "End-to-end enterprise software delivery.",
+      "headquarters": {
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "country": "India"
+      },
+      "ceo": "Ramesh Thakur",
+      "foundedYear": 2014,
+      "website": "https://techminds.in",
+      "rating": 4.1
+    },
+    {
+      "id": 42,
+      "name": "ByteForge",
+      "industry": "Software",
+      "description": "Custom SaaS application development.",
+      "headquarters": { "city": "Noida", "state": "UP", "country": "India" },
+      "ceo": "Harini B",
+      "foundedYear": 2021,
+      "website": "https://byteforge.in",
+      "rating": 5
+    },
+    {
+      "id": 43,
+      "name": "RailConnect AI",
+      "industry": "Transport",
+      "description": "Railway traffic optimization platform.",
+      "headquarters": { "city": "Patna", "state": "Bihar", "country": "India" },
+      "ceo": "Amit Kumar",
+      "foundedYear": 2019,
+      "website": "https://railconnect.ai",
+      "rating": 2.8
+    },
+    {
+      "id": 44,
+      "name": "EduCraft Learning",
+      "industry": "EdTech",
+      "description": "Skill-based learning for students.",
+      "headquarters": { "city": "Lucknow", "state": "UP", "country": "India" },
+      "ceo": "Aditi Singh",
+      "foundedYear": 2020,
+      "website": "https://educraft.in",
+      "rating": 3
+    },
+    {
+      "id": 45,
+      "name": "AquaPure Systems",
+      "industry": "WaterTech",
+      "description": "Smart filtration and water management tools.",
+      "headquarters": { "city": "Bhopal", "state": "MP", "country": "India" },
+      "ceo": "Pratik Jain",
+      "foundedYear": 2016,
+      "website": "https://aquapure.in",
+      "rating": 4.2
+    },
+
+    {
+      "id": 46,
+      "name": "HelioTech Energy",
+      "industry": "CleanTech",
+      "description": "Solar installation automation.",
+      "headquarters": {
+        "city": "Helsinki",
+        "state": "Uusimaa",
+        "country": "Finland"
+      },
+      "ceo": "Mikko Saarinen",
+      "foundedYear": 2018,
+      "website": "https://heliotech.fi",
+      "rating": 2.7
+    },
+    {
+      "id": 47,
+      "name": "Nordic AI Labs",
+      "industry": "AI",
+      "description": "AI research and modelling.",
+      "headquarters": {
+        "city": "Reykjavik",
+        "state": "Reykjavik",
+        "country": "Iceland"
+      },
+      "ceo": "Sara Kristinsdottir",
+      "foundedYear": 2021,
+      "website": "https://nordicailabs.is",
+      "rating": 3.3
+    },
+    {
+      "id": 48,
+      "name": "GlobalPay Systems",
+      "industry": "Finance",
+      "description": "Cross-border payment gateway.",
+      "headquarters": {
+        "city": "Mexico City",
+        "state": "CDMX",
+        "country": "Mexico"
+      },
+      "ceo": "Miguel Torres",
+      "foundedYear": 2010,
+      "website": "https://globalpay.mx",
+      "rating": 5
+    },
+    {
+      "id": 49,
+      "name": "ZenMotion Studios",
+      "industry": "Animation",
+      "description": "3D animation and visual effects.",
+      "headquarters": {
+        "city": "Hong Kong",
+        "state": "HK",
+        "country": "China"
+      },
+      "ceo": "Aaron Wong",
+      "foundedYear": 2017,
+      "website": "https://zenmotion.hk",
+      "rating": 1.7
+    },
+    {
+      "id": 50,
+      "name": "AeroLink Drones",
+      "industry": "Drones",
+      "description": "Drone delivery and mapping solutions.",
+      "headquarters": {
+        "city": "Istanbul",
+        "state": "Marmara",
+        "country": "Turkey"
+      },
+      "ceo": "Eren Kaya",
+      "foundedYear": 2019,
+      "website": "https://aerolinktr.com",
+      "rating": 4.5
+    }
+  ]
+}
