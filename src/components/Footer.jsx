@@ -17,9 +17,9 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Shop */}
+          {/* Company Services */}
           <div>
-            <h4 className="text-md font-semibold text-gray-900">Shop</h4>
+            <h4 className="text-md font-semibold text-gray-900">Company Services</h4>
             <ul className="mt-3 space-y-2 text-sm">
               <li><a style={{ textDecoration: "none" }} className="hover:text-indigo-600" href="#">Home</a></li>
               <li><a style={{ textDecoration: "none" }} className="hover:text-indigo-600" href="#">Services</a></li>

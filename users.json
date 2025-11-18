@@ -31,6 +31,14 @@
       "email": "ankal@gmail.com",
       "mobile": "6789054321",
       "password": "ankal@123"
+    },
+    {
+      "id": "1b365daf-b089-43a4-bcb0-cd52f05bbcde",
+      "firstName": "Rudhra",
+      "lastName": "Varanasi",
+      "email": "rudhra@gmail.com",
+      "mobile": "8765432102",
+      "password": "rudhra@1234"
     }
   ]
 }

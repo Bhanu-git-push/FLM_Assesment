@@ -5,6 +5,17 @@ import { v4 as uuidv4 } from "uuid";
 
 const Register = () => {
   const navigate = useNavigate();
+
+  const inputTags = ["First Name", "Last Name", "Email", "Mobile", "Password"];
+
+  const inputTypes = {
+    "First Name": "text",
+    "Last Name": "text",
+    "Email": "email",
+    "Mobile": "number",
+    "Password": "password",
+  };
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -60,26 +71,24 @@ const Register = () => {
       <div className="w-full max-w-md bg-white rounded-xl shadow-lg p-8">
         <h2 className="text-2xl font-bold text-center mb-6">Register</h2>
         <form className="space-y-4" onSubmit={handleSubmit}>
-          {["firstName", "lastName", "email", "mobile", "password"].map(
-            (field) => (
-              <div key={field} className="flex flex-col">
-                <label
-                  htmlFor={field}
-                  className="block mb-1 font-medium text-gray-700 text-left"
-                >
-                  {field.charAt(0).toUpperCase() + field.slice(1)}:
-                </label>
-                <input
-                  type={field === "password" ? "password" : "text"}
-                  id={field}
-                  placeholder={`Enter your ${field}`}
-                  value={formData[field]}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
-                />
-              </div>
-            )
-          )}
+          {inputTags.map((field) => (
+            <div key={field} className="flex flex-col">
+              <label
+                htmlFor={field}
+                className="block mb-1 font-medium text-gray-700 text-left"
+              >
+                {field.charAt(0) + field.slice(1)}:
+              </label>
+              <input
+                type={inputTypes[field]}
+                id={field}
+                placeholder={`Enter your ${field}`}
+                value={formData[field]}
+                onChange={handleChange}
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+            </div>
+          ))}
           <button
             type="submit"
             className="btn btn-primary w-full mt-4"

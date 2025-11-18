@@ -14,6 +14,7 @@ import { getUsers } from "../api/fetchUserAPI";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { isLoading, isError } = useSelector(
@@ -70,7 +71,7 @@ const Login = () => {
               Password:
             </label>
             <input
-              type="password"
+              type={showPassword ? "text" : "password"}
               id="password"
               placeholder="Enter your password"
               value={password}
@@ -78,6 +79,16 @@ const Login = () => {
               className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
           </div>
+          <label className="d-flex align-items-center gap-2 mt-2 text-sm text-gray-700" htmlFor="togglePassword">
+            <input
+              id="togglePassword"
+              type="checkbox"
+              checked={showPassword}
+              onChange={() => setShowPassword(!showPassword)}
+              className="h-4 w-4"
+            />
+            Show Password
+          </label>
           <button
             type="submit"
             className="btn btn-primary w-full mt-4"
