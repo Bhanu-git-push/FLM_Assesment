@@ -39,6 +39,22 @@
       "email": "rudhra@gmail.com",
       "mobile": "8765432102",
       "password": "rudhra@1234"
+    },
+    {
+      "id": "0428df61-2379-4019-878e-a81fad1477bf",
+      "firstName": "Guna",
+      "lastName": "Sekhar",
+      "email": "guna@gmail.com",
+      "mobile": "6543217888",
+      "password": "guna@123"
+    },
+    {
+      "id": "4ebc919f-0c75-4a24-9ec8-5e0fac644352",
+      "firstName": "Raju",
+      "lastName": "Raju",
+      "email": "raju@gmail.com",
+      "mobile": "76589054321",
+      "password": "raju@123"
     }
   ]
 }
