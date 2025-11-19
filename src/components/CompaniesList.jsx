@@ -178,7 +178,7 @@ const CompaniesList = () => {
   const totalPages = Math.ceil(filtered.length / itemsPerPage);
 
   const handleReset = () => {
-    alert("All filters cleared")
+    alert("All filters cleared");
     if (showAll) {
       setSearchName("");
       setIndustryFilter("");
@@ -254,106 +254,117 @@ const CompaniesList = () => {
       </div>
       {/* companies table */}
       <div>
-        <h2 className="text-2xl font-bold mb-3">Company List</h2>
         {filtered.length === 0 && (
-          <h3 className="text-gray-500">No companies found.</h3>
+          // <h3 className="text-gray-500">No companies found.</h3>
+          <h3 className="text-danger font-semibold text-center mt-5">
+            Something went wrong, No companies found.
+          </h3>
         )}
         {filtered.length > 0 && (
-          <table className="w-full border-collapse mt-4">
-            <thead>
-              <tr className="bg-gray-200">
-                <th className="border p-2">S.No</th>
-                <th className="border p-2">
-                  <div className="flex items-center justify-center gap-2">
-                    Company Name
-                    {showAll && (
-                      <FaSort
-                        className={`inline-block cursor-pointer ${
-                          activeSortColumn === "company"
-                            ? "text-blue-600"
-                            : "text-gray-700"
-                        }`}
-                        onClick={sortByCompany}
-                      />
-                    )}
-                  </div>
-                </th>
-                <th className="border p-2">
-                  <div className="flex items-center justify-center gap-2">
-                    Industry
-                    {showAll && (
-                      <FaSort
-                        className={`inline-block cursor-pointer ${
-                          activeSortColumn === "industry"
-                            ? "text-blue-600"
-                            : "text-gray-700"
-                        }`}
-                        onClick={sortByIndustry}
-                      />
-                    )}
-                  </div>
-                </th>
-                <th className="border p-2">
-                  <div className="flex items-center justify-center gap-2">
-                    Founded
-                    {showAll && (
-                      <FaSort
-                        className={`inline-block cursor-pointer ${
-                          activeSortColumn === "founded"
-                            ? "text-blue-600"
-                            : "text-gray-700"
-                        }`}
-                        onClick={sortByFounded}
-                      />
-                    )}
-                  </div>
-                </th>
-                <th className="border p-2">
-                  <div className="flex items-center justify-center gap-2">
-                    CEO
-                    {showAll && (
-                      <FaSort
-                        className={`inline-block cursor-pointer ${
-                          activeSortColumn === "ceo"
-                            ? "text-blue-600"
-                            : "text-gray-700"
-                        }`}
-                        onClick={sortByCEO}
-                      />
-                    )}
-                  </div>
-                </th>
-                <th className="border p-2">Headquarters</th>
-                <th className="border p-2">Website</th>
-                <th className="border p-2">Description</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              {/* {filtered.map((company, index) => ( */}
-              {currentData.map((company, index) => (
-                <tr key={company.id} className="odd:bg-white even:bg-gray-50">
-                  <td className="border p-2 text-center">
-                    {indexOfFirst + index + 1}
-                  </td>
-                  <td className="border p-2 font-semibold">{company.name}</td>
-                  <td className="border p-2">{company.industry}</td>
-                  <td className="border p-2">{company.foundedYear}</td>
-                  <td className="border p-2">{company.ceo}</td>
-                  <td className="border p-2">
-                    {company.headquarters.city}, {company.headquarters.state},{" "}
-                    {company.headquarters.country}
-                  </td>
-                  <td className="border p-2">
-                    <a style={{ textDecoration: "none" }} className="hover:text-indigo-600" href={company.website} target="_blank" rel="noreferrer">
-                      {company.website}
-                    </a>
-                  </td>
-                  <td className="border p-2">{company.description}</td>
+          <div>
+            <h2 className="text-2xl font-bold mb-3">Company List</h2>
+            <table className="w-full border-collapse mt-4">
+              <thead>
+                <tr className="bg-gray-200">
+                  <th className="border p-2">S.No</th>
+                  <th className="border p-2">
+                    <div className="flex items-center justify-center gap-2">
+                      Company Name
+                      {showAll && (
+                        <FaSort
+                          className={`inline-block cursor-pointer ${
+                            activeSortColumn === "company"
+                              ? "text-blue-600"
+                              : "text-gray-700"
+                          }`}
+                          onClick={sortByCompany}
+                        />
+                      )}
+                    </div>
+                  </th>
+                  <th className="border p-2">
+                    <div className="flex items-center justify-center gap-2">
+                      Industry
+                      {showAll && (
+                        <FaSort
+                          className={`inline-block cursor-pointer ${
+                            activeSortColumn === "industry"
+                              ? "text-blue-600"
+                              : "text-gray-700"
+                          }`}
+                          onClick={sortByIndustry}
+                        />
+                      )}
+                    </div>
+                  </th>
+                  <th className="border p-2">
+                    <div className="flex items-center justify-center gap-2">
+                      Founded
+                      {showAll && (
+                        <FaSort
+                          className={`inline-block cursor-pointer ${
+                            activeSortColumn === "founded"
+                              ? "text-blue-600"
+                              : "text-gray-700"
+                          }`}
+                          onClick={sortByFounded}
+                        />
+                      )}
+                    </div>
+                  </th>
+                  <th className="border p-2">
+                    <div className="flex items-center justify-center gap-2">
+                      CEO
+                      {showAll && (
+                        <FaSort
+                          className={`inline-block cursor-pointer ${
+                            activeSortColumn === "ceo"
+                              ? "text-blue-600"
+                              : "text-gray-700"
+                          }`}
+                          onClick={sortByCEO}
+                        />
+                      )}
+                    </div>
+                  </th>
+                  <th className="border p-2">Headquarters</th>
+                  <th className="border p-2">Website</th>
+                  <th className="border p-2">Description</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+
+              <tbody>
+                {/* {filtered.map((company, index) => ( */}
+                {currentData.map((company, index) => (
+                  <tr key={company.id} className="odd:bg-white even:bg-gray-50">
+                    <td className="border p-2 text-center">
+                      {indexOfFirst + index + 1}
+                    </td>
+                    <td className="border p-2 font-semibold">{company.name}</td>
+                    <td className="border p-2">{company.industry}</td>
+                    <td className="border p-2">{company.foundedYear}</td>
+                    <td className="border p-2">{company.ceo}</td>
+                    <td className="border p-2">
+                      {company.headquarters.city}, {company.headquarters.state},{" "}
+                      {company.headquarters.country}
+                    </td>
+                    <td className="border p-2">
+                      <a
+                        style={{ textDecoration: "none" }}
+                        className="hover:text-indigo-600"
+                        href={company.website}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {company.website}
+                      </a>
+                    </td>
+                    <td className="border p-2">{company.description}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         )}
       </div>
       {/* pagination */}
@@ -396,12 +407,20 @@ const CompaniesList = () => {
       </div>
       {/* show all */}
       <div className="mt-4">
-        <button
+        {/* <button
           onClick={() => setShowAll((prev) => !prev)}
           className="px-4 py-2 btn btn-primary rounded"
         >
           {showAll ? "Show Pagination" : "Show All Company Data"}
-        </button>
+        </button> */}
+        {filtered.length !== 0 && (
+          <button
+            onClick={() => setShowAll((prev) => !prev)}
+            className="px-4 py-2 btn btn-primary rounded"
+          >
+            {showAll ? "Show Pagination" : "Show All Company Data"}
+          </button>
+        )}
       </div>
     </div>
   );

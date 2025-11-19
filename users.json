@@ -55,6 +55,14 @@
       "email": "raju@gmail.com",
       "mobile": "76589054321",
       "password": "raju@123"
+    },
+    {
+      "id": "5fbc919e-0c75-4a24-9ec8-5h0eac644373",
+      "firstName": "Demo User",
+      "lastName": "Demo Last",
+      "email": "demo@gmail.com",
+      "mobile": "8312456709",
+      "password": "demo@123"
     }
   ]
 }
