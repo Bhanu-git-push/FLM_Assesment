@@ -267,10 +267,23 @@ const CompaniesList = () => {
       </div>
       {/* companies table */}
       <div>
-        {filtered.length === 0 && (
+        {/* {filtered.length === 0 && (
           // <h3 className="text-gray-500">No companies found.</h3>
-          <h3 className="text-danger font-semibold text-center mt-5">
-            Something went wrong, No companies found.
+          <h3 className="text-black font-semibold text-center mt-5">
+            No companies found.
+          </h3>
+        )} */}
+        {/* API Error Message */}
+        {isError && (
+          <h3 className="text-danger font-bold text-center mt-5">
+            Something went wrong. Please try again later.
+          </h3>
+        )}
+
+        {/* No Companies Found */}
+        {!isError && filtered.length === 0 && (
+          <h3 className="text-black font-semibold text-center mt-5">
+            No companies found.
           </h3>
         )}
         {filtered.length > 0 && (
