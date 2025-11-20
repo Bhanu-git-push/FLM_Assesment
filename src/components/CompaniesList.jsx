@@ -255,7 +255,7 @@ const CompaniesList = () => {
         </div>
         <div>
           {/* <span className="font-bold text-green-400 text-lg">To view all Company data and to remove all filters, click here: </span> */}
-          <span className="font-bold text-green-400 text-lg">
+          <span className="font-bold text-success text-lg">
             To view all Company data and to remove all filters,{" "}
             <span className="text-indigo-500">click here: </span>
           </span>
