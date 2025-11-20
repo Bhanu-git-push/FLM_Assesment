@@ -214,46 +214,56 @@ const CompaniesList = () => {
   return (
     <div className="p-4">
       {/* filter section */}
-      <div className="flex flex-wrap gap-4 mb-6 bg-gray-100 p-4 rounded-lg">
+      <div className="flex flex-column flex-wrap gap-4 mb-6 bg-gray-100 p-4 rounded-lg">
         {/* Search by Name */}
-        <input
-          type="text"
-          placeholder="Search by company name"
-          value={searchName}
-          onChange={(e) => setSearchName(e.target.value)}
-          className="border p-2 rounded w-64"
-        />
+        <div>
+          <input
+            type="text"
+            placeholder="Search by company name"
+            value={searchName}
+            onChange={(e) => setSearchName(e.target.value)}
+            className="border border-black placeholder-black p-2 rounded w-64 m-1"
+          />
 
-        {/* Industry Dropdown */}
-        <select
-          value={industryFilter}
-          onChange={(e) => setIndustryFilter(e.target.value)}
-          className="border p-2 rounded"
-        >
-          <option value="">All Industries</option>
-          {[...industries].sort().map((ind, index) => (
-            <option key={index} value={ind}>
-              {ind}
-            </option>
-          ))}
-        </select>
+          {/* Industry Dropdown */}
+          <select
+            value={industryFilter}
+            onChange={(e) => setIndustryFilter(e.target.value)}
+            className="border border-black p-2 rounded m-1"
+          >
+            <option value="">All Industries</option>
+            {[...industries].sort().map((ind, index) => (
+              <option key={index} value={ind}>
+                {ind}
+              </option>
+            ))}
+          </select>
 
-        {/* Country Dropdown */}
-        <select
-          value={countryFilter}
-          onChange={(e) => setCountryFilter(e.target.value)}
-          className="border p-2 rounded"
-        >
-          <option value="">All Countries</option>
-          {[...countries].sort().map((ctry, index) => (
-            <option key={index} value={ctry}>
-              {ctry}
-            </option>
-          ))}
-        </select>
-        <button className="btn btn-dark" onClick={handleReset}>
-          Reset
-        </button>
+          {/* Country Dropdown */}
+          <select
+            value={countryFilter}
+            onChange={(e) => setCountryFilter(e.target.value)}
+            className="border border-black p-2 rounded m-1"
+          >
+            <option value="">All Countries</option>
+            {[...countries].sort().map((ctry, index) => (
+              <option key={index} value={ctry}>
+                {ctry}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div>
+          {/* <span className="font-bold text-green-400 text-lg">To view all Company data and to remove all filters, click here: </span> */}
+          <span className="font-bold text-green-400 text-lg">
+            To view all Company data and to remove all filters,{" "}
+            <span className="text-indigo-500">click here: </span>
+          </span>
+
+          <button className="btn btn-dark" onClick={handleReset}>
+            Reset
+          </button>
+        </div>
       </div>
       {/* companies table */}
       <div>
@@ -284,13 +294,13 @@ const CompaniesList = () => {
                         />
                       )} */}
                       <FaSort
-                          className={`inline-block cursor-pointer ${
-                            activeSortColumn === "company"
-                              ? "text-blue-600"
-                              : "text-gray-700"
-                          }`}
-                          onClick={sortByCompany}
-                        />
+                        className={`inline-block cursor-pointer ${
+                          activeSortColumn === "company"
+                            ? "text-blue-600"
+                            : "text-gray-700"
+                        }`}
+                        onClick={sortByCompany}
+                      />
                     </div>
                   </th>
                   <th className="border p-2">
@@ -307,13 +317,13 @@ const CompaniesList = () => {
                         />
                       )} */}
                       <FaSort
-                          className={`inline-block cursor-pointer ${
-                            activeSortColumn === "industry"
-                              ? "text-blue-600"
-                              : "text-gray-700"
-                          }`}
-                          onClick={sortByIndustry}
-                        />
+                        className={`inline-block cursor-pointer ${
+                          activeSortColumn === "industry"
+                            ? "text-blue-600"
+                            : "text-gray-700"
+                        }`}
+                        onClick={sortByIndustry}
+                      />
                     </div>
                   </th>
                   <th className="border p-2">
@@ -330,13 +340,13 @@ const CompaniesList = () => {
                         />
                       )} */}
                       <FaSort
-                          className={`inline-block cursor-pointer ${
-                            activeSortColumn === "founded"
-                              ? "text-blue-600"
-                              : "text-gray-700"
-                          }`}
-                          onClick={sortByFounded}
-                        />
+                        className={`inline-block cursor-pointer ${
+                          activeSortColumn === "founded"
+                            ? "text-blue-600"
+                            : "text-gray-700"
+                        }`}
+                        onClick={sortByFounded}
+                      />
                     </div>
                   </th>
                   <th className="border p-2">
@@ -353,13 +363,13 @@ const CompaniesList = () => {
                         />
                       )} */}
                       <FaSort
-                          className={`inline-block cursor-pointer ${
-                            activeSortColumn === "ceo"
-                              ? "text-blue-600"
-                              : "text-gray-700"
-                          }`}
-                          onClick={sortByCEO}
-                        />
+                        className={`inline-block cursor-pointer ${
+                          activeSortColumn === "ceo"
+                            ? "text-blue-600"
+                            : "text-gray-700"
+                        }`}
+                        onClick={sortByCEO}
+                      />
                     </div>
                   </th>
                   <th className="border p-2">Headquarters</th>
