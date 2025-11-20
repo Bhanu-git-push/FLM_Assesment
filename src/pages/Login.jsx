@@ -15,6 +15,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { isLoading, isError } = useSelector(
@@ -23,13 +24,29 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!email || !password) {
+      // alert("Please enter email and password");
+      setErrorMessage("Please enter your Email and Password to Login.");
+      dispatch(loginFailureAction());
+      return; // stop further execution
+    }
+
     dispatch(loginRequestAction());
 
     try {
       const users = await getUsers(email, password);
+
+      if (users.length === 0) {
+        setErrorMessage("Login failed. Please check your credentials.");
+        dispatch(loginFailureAction());
+        return;
+      }
+
       if (users.length > 0) {
         const user = users[0];
         dispatch(loginSuccessAction(user));
+        // dispatch(loginSuccessAction(users[0]));
         alert("Login Success");
         navigate("/");
       } else {
@@ -37,8 +54,10 @@ const Login = () => {
       }
     } catch (err) {
       console.error(err);
+      // dispatch(loginFailureAction());
+      setErrorMessage("Something went wrong. Try again!");
       dispatch(loginFailureAction());
-      alert("Something went wrong. Try again!");
+      // alert("Something went wrong. Try again!");
     }
   };
 
@@ -79,7 +98,10 @@ const Login = () => {
               className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
           </div>
-          <label className="d-flex align-items-center gap-2 mt-2 text-sm text-gray-700" htmlFor="togglePassword">
+          <label
+            className="d-flex align-items-center gap-2 mt-2 text-sm text-gray-700"
+            htmlFor="togglePassword"
+          >
             <input
               id="togglePassword"
               type="checkbox"
@@ -99,7 +121,7 @@ const Login = () => {
         </form>
         {isError && (
           <p className="text-red-500 mt-3 text-center">
-            Login failed. Please check your credentials.
+            {errorMessage}
           </p>
         )}
         <p className="mt-4 text-center text-gray-600">

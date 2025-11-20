@@ -31,6 +31,9 @@ const CompaniesList = () => {
 
   const [showAll, setShowAll] = useState(false);
 
+  const isFiltering =
+    searchName.trim() !== "" || industryFilter !== "" || countryFilter !== "";
+
   useEffect(() => {
     const fetchData = async () => {
       dispatch(fetchCompaniesRequest());
@@ -270,7 +273,7 @@ const CompaniesList = () => {
                   <th className="border p-2">
                     <div className="flex items-center justify-center gap-2">
                       Company Name
-                      {showAll && (
+                      {/* {showAll && (
                         <FaSort
                           className={`inline-block cursor-pointer ${
                             activeSortColumn === "company"
@@ -279,13 +282,21 @@ const CompaniesList = () => {
                           }`}
                           onClick={sortByCompany}
                         />
-                      )}
+                      )} */}
+                      <FaSort
+                          className={`inline-block cursor-pointer ${
+                            activeSortColumn === "company"
+                              ? "text-blue-600"
+                              : "text-gray-700"
+                          }`}
+                          onClick={sortByCompany}
+                        />
                     </div>
                   </th>
                   <th className="border p-2">
                     <div className="flex items-center justify-center gap-2">
                       Industry
-                      {showAll && (
+                      {/* {showAll && (
                         <FaSort
                           className={`inline-block cursor-pointer ${
                             activeSortColumn === "industry"
@@ -294,13 +305,21 @@ const CompaniesList = () => {
                           }`}
                           onClick={sortByIndustry}
                         />
-                      )}
+                      )} */}
+                      <FaSort
+                          className={`inline-block cursor-pointer ${
+                            activeSortColumn === "industry"
+                              ? "text-blue-600"
+                              : "text-gray-700"
+                          }`}
+                          onClick={sortByIndustry}
+                        />
                     </div>
                   </th>
                   <th className="border p-2">
                     <div className="flex items-center justify-center gap-2">
                       Founded
-                      {showAll && (
+                      {/* {showAll && (
                         <FaSort
                           className={`inline-block cursor-pointer ${
                             activeSortColumn === "founded"
@@ -309,13 +328,21 @@ const CompaniesList = () => {
                           }`}
                           onClick={sortByFounded}
                         />
-                      )}
+                      )} */}
+                      <FaSort
+                          className={`inline-block cursor-pointer ${
+                            activeSortColumn === "founded"
+                              ? "text-blue-600"
+                              : "text-gray-700"
+                          }`}
+                          onClick={sortByFounded}
+                        />
                     </div>
                   </th>
                   <th className="border p-2">
                     <div className="flex items-center justify-center gap-2">
                       CEO
-                      {showAll && (
+                      {/* {showAll && (
                         <FaSort
                           className={`inline-block cursor-pointer ${
                             activeSortColumn === "ceo"
@@ -324,7 +351,15 @@ const CompaniesList = () => {
                           }`}
                           onClick={sortByCEO}
                         />
-                      )}
+                      )} */}
+                      <FaSort
+                          className={`inline-block cursor-pointer ${
+                            activeSortColumn === "ceo"
+                              ? "text-blue-600"
+                              : "text-gray-700"
+                          }`}
+                          onClick={sortByCEO}
+                        />
                     </div>
                   </th>
                   <th className="border p-2">Headquarters</th>
@@ -413,7 +448,15 @@ const CompaniesList = () => {
         >
           {showAll ? "Show Pagination" : "Show All Company Data"}
         </button> */}
-        {filtered.length !== 0 && (
+        {/* {filtered.length !== 0 && (
+          <button
+            onClick={() => setShowAll((prev) => !prev)}
+            className="px-4 py-2 btn btn-primary rounded"
+          >
+            {showAll ? "Show Pagination" : "Show All Company Data"}
+          </button>
+        )} */}
+        {filtered.length !== 0 && !isFiltering && (
           <button
             onClick={() => setShowAll((prev) => !prev)}
             className="px-4 py-2 btn btn-primary rounded"
